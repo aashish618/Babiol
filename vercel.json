@@ -1,0 +1,19 @@
+{
+  "name": "babiol",
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "Babiol",
+    "NEXT_PUBLIC_WAITLIST_ENABLED": "true",
+    "NEXT_PUBLIC_DEMO_MODE": "true"
+  },
+  "regions": ["iad1"],
+  "public": true,
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
+}
