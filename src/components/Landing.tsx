@@ -4,8 +4,6 @@ import { useState } from 'react'
 import { ChevronDown, MapPin, Clock, Users, Heart, Shield, Zap, CheckCircle } from 'lucide-react'
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <header className="fixed top-0 w-full bg-white/98 backdrop-blur-md border-b border-gray-100 z-50">
       <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
