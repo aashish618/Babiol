@@ -2,8 +2,16 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Babiol - On-Demand Baby Care in 10 Minutes',
-  description: 'Get trusted babysitters in 10 minutes. The fastest baby care service in Hyderabad and Bangalore.',
+  title: 'Babiol | 10-Minute Baby Care for Urban Parents',
+  description:
+    'Babiol is an incubation-ready concept for instant verified baby caretakers and baby essentials in Hyderabad and Bangalore.',
+  keywords: ['Babiol', 'baby care', 'babysitter', 'caretaker', 'quick commerce', 'Hyderabad', 'Bangalore'],
+  openGraph: {
+    title: 'Babiol | Book a Baby Caretaker in 10 Minutes',
+    description:
+      'A Zepto-style baby care and baby essentials platform for busy city parents who need trusted short-duration support.',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
@@ -12,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="bg-background">
-      <body className="text-foreground">{children}</body>
+    <html lang="en" className="bg-white">
+      <body className="text-slate-950 antialiased">{children}</body>
     </html>
   )
 }
